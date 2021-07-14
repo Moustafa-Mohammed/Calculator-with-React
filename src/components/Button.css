@@ -1,0 +1,49 @@
+.btns-container {
+  background-color: hsl(223, 31%, 20%);
+  padding: 10px;
+  display: grid;
+  grid-gap: 6px;
+  width: 200px;
+  grid-column: 1/-1;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 28px;
+  grid-gap: 6px;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 2px;
+  border: none;
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: hsl(28, 16%, 65%);
+  color: hsl(221, 14%, 31%);
+  font-weight: 700;
+  font-size: 10px;
+  font-family: "Spartan", sans-serif;
+}
+
+.delete {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: hsl(224, 28%, 35%);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.reset {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: hsl(224, 28%, 35%);
+  color: #fff;
+  text-transform: uppercase;
+  grid-column: span 4;
+}
+
+.equal {
+  background-color: hsl(30, 77%, 46%);
+  box-shadow: hsl(28, 16%, 65%);
+  color: #fff;
+  grid-column: span 4;
+}
