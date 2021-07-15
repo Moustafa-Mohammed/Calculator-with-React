@@ -23,8 +23,6 @@ const App = () => {
   const handleDelete = () => {
     if (term.length > 0) {
       setTerm((oldTerm) => oldTerm.slice(0, oldTerm.length - 1));
-    } else if (result.length > 0) {
-      setResult((oldResult) => oldResult.slice(0, oldResult.length - 1));
     }
   };
 
@@ -77,16 +75,16 @@ const App = () => {
           <Button num="*" handleBtnClick={handleBtnClick} />
         </div>
         <div className="row last-row">
-          {result && (
+          {result !== "" && (
             <Button
               num="Reset"
               className="reset"
               handleBtnClick={handleReset}
             />
           )}
-          {!result && (
+          {result === "" ? (
             <Button num="=" className="equal" handleBtnClick={handleResult} />
-          )}
+          ) : null}
         </div>
       </div>
     </div>
